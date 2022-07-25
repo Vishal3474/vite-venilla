@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe Game | Vishal</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="icon"
+      href="https://i.pinimg.com/originals/a6/3b/89/a63b89333dfcfc4996b8dd5afab898ef.png"
+    />
+  </head>
+
+  <body
+    class="bg-[url('https://cdn.discordapp.com/attachments/998764908479004743/1001171129546842273/kevin-kandlbinder-WrjxzLskZK0-unsplash.jpg')] bg-cover"
+  >
+    <div
+      class="flex items-center justify-between p-4 text-xl font-bold text-white"
+    >
+      <div>
+        <h3>Player A</h3>
+        <h3 id="winFirst" class="text-center"></h3>
+      </div>
+      <div>
+        <h3>Draw</h3>
+        <h3 id="draw" class="text-center"></h3>
+      </div>
+      <div>
+        <h3>Player B</h3>
+        <h3 id="winSecond" class="text-center"></h3>
+      </div>
+    </div>
+    <div
+      class="font bold m-4 flex justify-center rounded-md bg-none text-3xl text-red-500"
+    >
+      <h3>Round</h3>
+      <h3 id="round" class="ml-2"></h3>
+    </div>
+    <div
+      class="my-6 bg-none p-2 text-center text-3xl font-bold text-red-500"
+      id="turn"
+    ></div>
+    <div class="mt-6 flex grow flex-col items-center justify-center">
+      <div class="mb-2 flex border-b-2 border-white">
+        <button
+          class="mr-2 block h-16 w-16 overflow-hidden rounded-md border-r-2 border-white bg-[url('https://cdn.discordapp.com/attachments/998764908479004743/1001171129546842273/kevin-kandlbinder-WrjxzLskZK0-unsplash.jpg')] text-6xl font-bold text-white"
+          id="buttonFirst"
+          onclick="ticTacToe()"
+        ></button>
+        <button
+          class="mr-2 block h-16 w-16 overflow-hidden rounded-md border-r-2 border-white bg-[url('https://cdn.discordapp.com/attachments/998764908479004743/1001171129546842273/kevin-kandlbinder-WrjxzLskZK0-unsplash.jpg')] text-6xl font-bold text-white"
+          id="buttonSecond"
+          onclick="ticTacToe()"
+        ></button>
+        <button
+          class="block h-16 w-16 overflow-hidden rounded-md bg-[url('https://cdn.discordapp.com/attachments/998764908479004743/1001171129546842273/kevin-kandlbinder-WrjxzLskZK0-unsplash.jpg')] text-6xl font-bold text-white"
+          id="buttonThird"
+          onclick="ticTacToe()"
+        ></button>
+      </div>
+      <div class="mb-2 flex border-b-2 border-white">
+        <button
+          class="mr-2 block h-16 w-16 overflow-hidden rounded-md border-r-2 border-white bg-[url('https://cdn.discordapp.com/attachments/998764908479004743/1001171129546842273/kevin-kandlbinder-WrjxzLskZK0-unsplash.jpg')] text-6xl font-bold text-white"
+          id="buttonFour"
+          onclick="ticTacToe()"
+        ></button>
+        <button
+          class="mr-2 block h-16 w-16 overflow-hidden rounded-md border-r-2 border-white bg-[url('https://cdn.discordapp.com/attachments/998764908479004743/1001171129546842273/kevin-kandlbinder-WrjxzLskZK0-unsplash.jpg')] text-6xl font-bold text-white"
+          id="buttonFive"
+          onclick="ticTacToe()"
+        ></button>
+        <button
+          class="block h-16 w-16 overflow-hidden rounded-md bg-[url('https://cdn.discordapp.com/attachments/998764908479004743/1001171129546842273/kevin-kandlbinder-WrjxzLskZK0-unsplash.jpg')] text-6xl font-bold text-white"
+          id="buttonSix"
+          onclick="ticTacToe()"
+        ></button>
+      </div>
+      <div class="flex">
+        <button
+          class="mr-2 block h-16 w-16 overflow-hidden rounded-md border-r-2 border-white bg-[url('https://cdn.discordapp.com/attachments/998764908479004743/1001171129546842273/kevin-kandlbinder-WrjxzLskZK0-unsplash.jpg')] text-6xl font-bold text-white"
+          id="buttonSeven"
+          onclick="ticTacToe()"
+        ></button>
+        <button
+          class="mr-2 block h-16 w-16 overflow-hidden rounded-md border-r-2 border-white bg-[url('https://cdn.discordapp.com/attachments/998764908479004743/1001171129546842273/kevin-kandlbinder-WrjxzLskZK0-unsplash.jpg')] text-6xl font-bold text-white"
+          id="buttonEight"
+          onclick="ticTacToe()"
+        ></button>
+        <button
+          class="block h-16 w-16 overflow-hidden rounded-md bg-[url('https://cdn.discordapp.com/attachments/998764908479004743/1001171129546842273/kevin-kandlbinder-WrjxzLskZK0-unsplash.jpg')] text-6xl font-bold text-white"
+          id="buttonNine"
+          onclick="ticTacToe()"
+        ></button>
+      </div>
+    </div>
+    <div
+      class="mt-6 bg-none p-2 text-3xl font-bold text-indigo-500"
+      id="result"
+    ></div>
+
+    <script type="module" src="./main.js"></script>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
